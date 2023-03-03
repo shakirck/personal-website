@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React, { useEffect } from 'react'
 import Navbar from './navbar'
 import { HoverButton } from '../util/hover'
-export default function topNav() {
+export default function TopNav() {
     const logoElRef = React.useRef(null)
      useEffect(() => {
       const logoEl = logoElRef.current
