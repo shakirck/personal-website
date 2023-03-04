@@ -192,13 +192,13 @@ button:focus-visible {
   border-radius: 0.5rem;
   margin: 1rem;
   transition: background-color 0.25s;
-  font-weight: 900;
+  font-weight: 700;
 }
    
 .current-company{
   margin: 1rem;
   transition: background-color 0.25s;
-  font-weight: 900;
+  font-weight: 700;
 }
  
  @-webkit-keyframes scale-up-center {
