@@ -1,9 +1,7 @@
 import { useEffect, useState } from 'react';
 import '../styles/hamburgers.css';
-import * as contentful from 'contentful';
 
 export default function Navbar() {
-  const { CONTENTFUL_SPACE_ID, CONTENTFUL_ACCESS_TOKEN } = process.env;
   const [state, setState] = useState({
     isActive: false,
     resumeUrl: '',
@@ -12,13 +10,14 @@ export default function Navbar() {
   useEffect(() => {
     async function getResumeFromContentful() {
       try {
-        const client = contentful.createClient({
-          space: CONTENTFUL_SPACE_ID || '',
-          accessToken: CONTENTFUL_ACCESS_TOKEN || '',
-        });
-        const data = await client.getAsset('3Y7zLT4VYnlKxoIYOWpKBf');
-        const resumeUrl = data?.fields?.file?.url ?? '';
-        setState((prevState) => ({ ...prevState, resumeUrl }));
+        const data = await fetch('/api/resume', {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        })
+        const resume = await data.json();
+        setState((prevState) => ({ ...prevState, resumeUrl: resume.url }));
       } catch (error) {
         console.log(error)
       }
