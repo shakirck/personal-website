@@ -5,6 +5,7 @@ export const metadata = {
   description: 'Not just a developer, but a problem solver',
 }
 import TopNav from './components/topNav'
+import SocialIcons from './components/socialIcons'
 
 export default function RootLayout({
   children,
@@ -15,6 +16,7 @@ export default function RootLayout({
     <html lang="en">
 
       <body>
+        <SocialIcons/>
             <TopNav />
         {children}</body>
     </html>

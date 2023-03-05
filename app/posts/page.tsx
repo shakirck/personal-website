@@ -1,4 +1,5 @@
 import React from 'react';
+import SocialIcons from '../components/socialIcons';
 import './posts.css';
  
   

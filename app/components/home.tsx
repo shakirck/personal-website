@@ -6,7 +6,7 @@ export default function Home(): JSX.Element {
    
     return (
         <div className='home-main'>
-            <SocialIcons/>
+            {/* <SocialIcons/> */}
             <div className='profile-hero'>
                 <div className='profile-hero-greet'>
                     <div style={{
