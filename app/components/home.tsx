@@ -1,5 +1,6 @@
 import SocialIcons from "./socialIcons";
 
+
 export default function Home(): JSX.Element {
 
    
@@ -18,7 +19,7 @@ export default function Home(): JSX.Element {
                     </div>
                 </div>
                 <div className='short-info'>
-                    <h1 className='profile-hero-name'>
+                    <h1 className='profile-hero-name scale-up-center scale-up-ver-top transition'>
                         <span
                             style={
                                 {
@@ -26,17 +27,18 @@ export default function Home(): JSX.Element {
                                     fontWeight: 300
                                 }
                             }
+                            className="transition-company"
                         >
                             MUHAMMED &nbsp;
                             SHAKIR C K
                         </span>
                     </h1>
-                    <h2 className='current-company'>
-                        SDE II @ <span className='colored-one' style={{ margin: 0 }}>NeoITO</span>
+                    <h2 className='current-company scale-up-center transition'>
+                        SDE II @ <span className='colored-one transition-company' style={{ margin: 0 }}>NeoITO</span>
                     </h2>
                 </div>
-                <div className='profile-hero-desc'>
-                    <p>
+                <div className='profile-hero-desc scale-up-center '>
+                    <p className="scale-up-ver-top">
                         I am an Experienced Fullstack/Backend Software Engineer with 2+ years of experience,
                         proficient in programming languages such as
                         <span className='colored-one'>
