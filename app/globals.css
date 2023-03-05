@@ -220,14 +220,47 @@ button:focus-visible {
 
  
 
- 
+toast{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
 a:hover {
 color: #535bf2;
 font-weight: 500;
 }
 
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  text-align: left;
+}
+.contact .row{
+  display: flex;
+  /* width: 50%; */
+  /* height: 50px; */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.data-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
-
+.contact .row h3 {
+  font-weight: 500;
+}
+/* second h3 */
+.contact .row h3:nth-child(2) {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #888;
+}
 button {
 border-radius: 8px;
 border: 1px solid transparent;

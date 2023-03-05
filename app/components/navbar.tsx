@@ -47,13 +47,17 @@ export default function Navbar() {
         <li>
           <a href="/posts">Blogs</a>
         </li>
-        <li>Projects</li>
+        {/* <li>Projects</li> */}
         <li>
           <a href={state.resumeUrl} target="_blank">
             Resume
           </a>
         </li>
-        <li>Contact</li>
+        <li>
+          <a href="/contact">
+            Contact Me
+          </a>
+        </li>
       </ul>
     </nav>
   );
