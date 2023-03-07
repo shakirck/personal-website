@@ -6,7 +6,7 @@ import './globals.css'
 export default function Home() {
   
   return (
-    <main className="App">
+    <main className="App ">
       <HomePage />
     </main>
   )

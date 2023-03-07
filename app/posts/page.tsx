@@ -21,7 +21,7 @@ export default async function page() {
   };
 
   return (
-    <div className='blog-container'>
+    <div className='blog-container animate' >
       {posts.map((post: any) => (
         <div className='blog-post' key={post.guid}>
           <p>{new Date(post.pubDate).toLocaleDateString()}</p>

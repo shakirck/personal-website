@@ -28,6 +28,11 @@ export default function Navbar() {
   const toggleMenu = () => {
     setState((prevState) => ({ ...prevState, isActive: !prevState.isActive }));
   };
+  const getURL = () => {
+    const resumeUrl = state.resumeUrl;
+    const url = "https:"+ resumeUrl
+    return url;
+  }
 
   return (
     <nav className="navbar">
@@ -49,7 +54,7 @@ export default function Navbar() {
         </li>
         {/* <li>Projects</li> */}
         <li>
-          <a href={state.resumeUrl} target="_blank">
+          <a href={getURL()} target="_blank">
             Resume
           </a>
         </li>

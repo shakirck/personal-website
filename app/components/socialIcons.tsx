@@ -16,7 +16,7 @@ export default function SocialIcons() {
     }
     )
   return (
-    <ul className='social-left'>
+    <ul className='social-left animate animatefor5ms animatedelay1s' >
     <li>
     <a href="https://www.github.com/shakirck" target="_blank">
          <Image src='/social/github.svg' alt='' width={30} height={30} />

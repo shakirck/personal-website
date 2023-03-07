@@ -33,7 +33,7 @@ export class HoverButton {
   
     onMouseMove(e: MouseEvent) {
       let hover = false;
-      let hoverArea = this.hover ? 0.7 : 0.5;
+      let hoverArea = this.hover ? .4:.4;
       let x = e.clientX - this.x;
       let y = e.clientY - this.y;
       let distance = Math.sqrt(x * x + y * y);
@@ -53,7 +53,7 @@ export class HoverButton {
   
     onHover(x:number, y:number) {
       gsap.to(this.el, {
-        x: (x - this.x) * 0.4,
+        x: (x - this.x) * 0.3,
         y: (y - this.y) * 0.4,
         scale: 1.15,
         ease: 'power2.out',

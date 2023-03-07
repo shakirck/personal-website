@@ -24,7 +24,7 @@ export default function ContactPage() {
   }
 
   return (
-    <div className='contact'>
+    <div className='contact animate'>
       <h2>Contact Details</h2>
       <div className='data-wrapper'>
         <div className='row'>

@@ -7,18 +7,18 @@ export default function Home(): JSX.Element {
     return (
         <div className='home-main'>
             {/* <SocialIcons/> */}
-            <div className='profile-hero'>
+            <div className='profile-hero '>
                 <div className='profile-hero-greet'>
                     <div style={{
                         width: '1%',
                     }}>
                         &nbsp;
                     </div>
-                    <div className='divrofile-hero-greet-text'>
+                    <div className='divrofile-hero-greet-text '>
                         {/* Hi , I'm */}
                     </div>
                 </div>
-                <div className='short-info'>
+                <div className='short-info animate-text animatefor5ms animatedelay1s'>
                     <h1 className='profile-hero-name scale-up-center scale-up-ver-top transition'>
                         <span
                             style={
@@ -33,11 +33,11 @@ export default function Home(): JSX.Element {
                             SHAKIR C K
                         </span>
                     </h1>
-                    <h2 className='current-company scale-up-center transition'>
+                    <h2 className='current-company scale-up-center transition animate-text animatefor7ms animatedelay1s'>
                         SDE II @ <span className='colored-one transition-company' style={{ margin: 0 }}>NeoITO</span>
                     </h2>
                 </div>
-                <div className='profile-hero-desc scale-up-center '>
+                <div className='profile-hero-desc scale-up-center animate-desc animatefor9ms animatedelay1s '>
                     <p className="scale-up-ver-top">
                         I am an Experienced Fullstack/Backend Software Engineer with 2+ years of experience,
                         proficient in programming languages such as
