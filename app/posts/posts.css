@@ -33,20 +33,29 @@
   .blog-post a {
     display: inline-block;
     margin-top: 1rem;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     padding: .4rem 0.6rem;
     transition: background-color 0.3s ease;
-    background-color: #000;
+    background-color:  #fff;
+    ;
     border-radius: 0.2rem;
 
   }
   
  
   .blog-post a:hover {
-    color:#535bf2
+    background-color:#535bf2;
+    color:#fff
   }
   .margin{
     margin: 11rem;
 
+  }
+  .header-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: flex;
   }
