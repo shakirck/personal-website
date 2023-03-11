@@ -9,8 +9,6 @@ export default async function page() {
   );
   const data = await res.json();
   const posts = data.items;
- 
-
   const getFirst250Words = (text: string) => {
     const words = text.split(' ');
     if (words.length > 50) {
@@ -21,7 +19,7 @@ export default async function page() {
   };
 
   return (
-    <div className='blog-container animate' >
+    <div className='blog-container ' >
       {posts.map((post: any) => (
         <div className='blog-post' key={post.guid}>
           <p>{new Date(post.pubDate).toLocaleDateString()}</p>
@@ -32,6 +30,9 @@ export default async function page() {
           <a href={post.link}>Read More</a>
         </div>
       ))}
+      <div className='margin'>
+
+      </div>
     </div>
   );
 }

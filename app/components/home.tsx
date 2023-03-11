@@ -1,4 +1,3 @@
-import SocialIcons from "./socialIcons";
 
 
 export default function Home(): JSX.Element {
