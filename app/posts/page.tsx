@@ -6,6 +6,11 @@ import './posts.css';
 export default async function page() {
   const res = await fetch(
     'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@shakirck'
+    ,{
+      next:{
+        revalidate: 120
+      }
+    }
   );
   const data = await res.json();
   const posts = data.items;
