@@ -33,18 +33,19 @@ export default function Home(): JSX.Element {
                         </span>
                     </h1>
                     <h2 className='current-company scale-up-center transition animate-text animatefor7ms animatedelay1s'>
-                        SDE II @ <span className='colored-one transition-company' style={{ margin: 0 }}>NeoITO</span>
+                        Senior Software Engineer @ <span className='colored-one transition-company' style={{ margin: 0 }}>NeoITO</span>
                     </h2>
                 </div>
                 <div className='profile-hero-desc scale-up-center animate-desc animatefor9ms animatedelay1s '>
                     <p className="scale-up-ver-top">
-                        I am an Experienced Fullstack/Backend Software Engineer with 2+ years of experience,
+                        I am an Experienced Fullstack/Backend Software Engineer with 3+ years of experience,
                         proficient in programming languages such as
                         <span className='colored-one'>
                             C++,
                             Java,
                             JavaScript,
                             TypeScript,
+                            Python
                             and Go.
                         </span>
                         Skilled in cloud technologies such as
@@ -59,8 +60,7 @@ export default function Home(): JSX.Element {
                             Express,
                             React,
                             Node.js,
-                            MongoDB, and
-                            PostgreSQL .
+                            MongoDB, PostgreSQL and Apache Airflow
                         </span>
                         Experienced in collaborative problem-solving and microservices architecture. Passionate about learning and exploring new technologies in Software Engineering.
 
